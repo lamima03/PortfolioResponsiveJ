@@ -1,0 +1,258 @@
+
+:root{
+    --background-color: #efe7e5;
+    --text-color:black;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 3% 15%;
+    
+}
+p{
+    line-height: 25px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -3% -15%;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    font-weight: 500;
+    
+}
+nav ul li{
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    padding: 0 2px;
+    margin-left: 2em;
+}
+h1{
+    font-weight: 500;
+}
+header{
+    margin-top:100px;
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+.image{
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-right: 40px;
+}
+.profil img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:300PX;
+    width: 300px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    margin-right: 10px;
+    
+    
+}
+
+.button{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+ 
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    
+    
+}
+
+#button{
+    display: flex;
+    margin: 0 2rem;
+    justify-content: space-evenly;
+    text-align: center;
+    
+    
+}
+.btn-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height:3rem;
+    border-radius: 50%;
+    padding: 1rem;
+    margin: 15px;
+    color: black;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
+#buttoncv{
+    background-color: rgb(244, 174, 54);
+    
+    
+}
+#buttonpro{
+    background-color:rgb(213, 41, 41);
+    
+}
+#buttoncont{
+    background-color: rgb(52, 168, 194);
+
+   
+ }
+    
+footer{
+   margin-top: 1%;
+   display: flex;
+   justify-content: space-between;
+   border-top: 1px solid #c3bdbdc8;
+   padding-top: 2em;
+
+
+   
+ }
+ footer section{
+    padding: 0px 50px;
+ }
+.liborder{
+    border-right: 1px solid #464646; 
+    padding-right: 2em;
+}
+
+.ecrit{
+   width: 500px;
+}
+strong{
+    font-weight: bold;
+}
+.suivre a{
+    font-weight: 100;
+}
+
+
+
+
+/*ma page experience ou cv*/
+#experte {
+    border-bottom:solid #c3bdbdc8 2px;
+    padding: 2rem 0;
+}
+#competence{
+    border-bottom:solid #c3bdbdc8 2px;
+    padding: 4rem 0;
+}
+#diplome {
+    border-bottom:solid #c3bdbdc8 2px;
+    padding: 4rem 0;
+}
+
+#langue{
+    padding: 4rem 0;
+}
+#cv{
+    
+    margin: 4rem 0;
+}
+
+
+
+/*debut de ma page contact*/
+
+#contact {
+    font: 100;
+    color: #000000 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+
+}
+#envoyer {
+    margin: 60px 0px 0px 20px;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 50%;
+    color: black;
+    border: 1px solid  #080808 ;
+}
+.name1, .name2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.name1 {
+    margin-right: 5%;
+}
+#formulaire{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 2% 10% 6% 10%;
+    margin-top: 150px;
+    line-height: 3.71pt;
+}
+textarea {
+    resize: none;
+}
+#noms, #submail , #avis{
+    display: flex;
+}
+.contact{
+    line-height: 30px;
+    padding-right: 40px;
+}
+label{
+    font-weight: 100;
+    font-size: small;
+}
+section a{
+    font-size: small;
+}
+
+
+/*ma page projet
+*/
+.images-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+   
+
+}
+.images .image-card .image_left{
+    margin-right: 40px;
+}
+ .image-right img{
+    height: 200px;
+    width: 400px;
+    padding-left: 40px;
+}
+.images{
+    display: flex;
+    margin-top: 60px;
+      }
+
+
+@media screen and (max-width: 880px) {
+    .images .image-card{
+        flex-wrap: wrap;
+    }
+    
+}

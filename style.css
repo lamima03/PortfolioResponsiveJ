@@ -137,7 +137,7 @@
 .about__button{
     display: flex;
     justify-content:space-between;
-    padding: 1px 50rem 0px 0px;
+    padding: 1rem 50rem 0rem 0rem;
       
 }
 .about__circle{

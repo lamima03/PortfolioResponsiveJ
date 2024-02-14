@@ -58,31 +58,34 @@
 }
 
 /* ----------------------------------------- Reset all styles -------------------------------------*/
-/*-----------------------------------------------acceuil---------------*/
-* {
+/*-----------------------------------------------acceuil------------------------------------------*/
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   body{
-    font-family: 'Roboto', sans-serif;    
+    font-family: 'Roboto', sans-serif; 
+    padding: 1rem;   
+}
+header{
+    position:sticky;
+    top: 0;
+    background-color:var(--white-color);
 }
 
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.nav--position{
-    position: fixed;
-    width: 100%;
+
 }
 .nav__list{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
-    font-weight: 500;
+    
     
 }
 
@@ -118,23 +121,16 @@
 
 
 .about{
-    display:grid;
-    grid-template-columns: 50% 50%;
-    margin-top:3rem;
-    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 0rem 10rem;
-    height: 55vh;
-
+    margin: 10rem 0rem;
+    padding: 0rem 15rem;
+    
 }
 .about__image{
-    justify-content: center;
-    
     align-items: center;
-    position: relative;
-    float: left;
-    
-    
+    padding-right: 2rem;    
 }
 .about__image__img{
     height: 20rem;
@@ -145,17 +141,15 @@
 
 }
 .about__description{
-  justify-content: center;
+    padding-left: 2rem;
+    width: 800;
+
 }
 
 .about__button{
     display: flex;
     justify-content:space-between;
-<<<<<<< HEAD
-    padding: 1rem 50rem 0rem 0rem;
-=======
-    padding: 1px 8rem 0px 0px;
->>>>>>> d3d5a02447dbe44c8a01961f739e69601390697c
+    padding: 1rem 10rem 0rem 0rem;
       
 }
 .about__circle{
@@ -207,11 +201,7 @@
 
 /*----------------------------------------ma page experience ou cv---------------------------------*/
 .main {
-    padding: 0rem 3rem;
-}
-.main__pading{
-    padding: 2rem 3rem;
-
+    padding: 0rem 2rem;
 }
 .right {
     border-bottom:solid #c3bdbdc8 2px;
@@ -294,9 +284,54 @@ background-color: #121213;
 /*---------------------------------------------------debut responsive-------------------------------------*/
 
 
-@media screen and (max-width: 880px) {
-    .images .image-card{
+@media screen and (max-width: 560px) {
+    .nav{
         flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+    main{
+        padding: 1rem 1rem;
+    }
+    .about{
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0%;
+        padding: 0%;
+        align-items: center;
+       
+    }
+    .footer{
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 1%;
+        align-items: center;
+        text-align: center;
+    }
+    .nav__list{
+        margin-top: 1rem;
+    }
+    .about__image__img{
+        width: 17rem;
+        height: 17rem;
+        padding-top: 1rem;
+    
+    }
+    .about__description{
+        width: 380Px;
+        text-align:center;
+        margin-top: 2rem;
+    }
+    .about__button{
+        padding: 1rem 0rem 0rem 0rem;
+        
+        justify-content: center;
+          
+    }
+    .about__circle{
+        margin: 5px;
+    }
+
+
     }
     
-}

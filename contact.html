@@ -23,9 +23,9 @@
         </nav>
     </header>
     <main>
-        <section class="about about--space" >
-            <div class="about__contact">
-                <h4>Contact</h4>
+        <section class="about about--contact" >
+            <div class="about__contact p">
+                <h1>Contact</h1><br>
                 <nav>
                     <strong>Télephone</strong><br><a class="nav__a" href="+24381064065">+243810640653</a>
                 </nav>
@@ -39,32 +39,32 @@
                     <div class="about__formulaire">
                         <nav class="about__name__label about__name__label--space ">
                             <label for="firstname">First Name</label><br>
-                            <input type="text" name="firstname" id="firstname" autofocus>
+                            <input type="text" name="firstname" id="firstname" class="input"autofocus>
                         </nav>
              
                         <nav class="about__name__label">
                             <label for="lastname">Last Name</label><br>
-                            <input type="text" name="lastname" id="lastname">
+                            <input type="text" name="lastname" id="lastname" class="input">
                         </nav>
                     </div>
                     <div class="about__formulaire ">
                         <nav class="about__name__label about__name__label--space">
                             <label for="email">Email</label><br>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" class="input">
                         </nav>
                         <nav class="about__name__label">
                             <label for="subject">Subject</label><br>
-                            <input type="text" name="subject" id="subject">
+                            <input type="text" name="subject" id="subject" class="input">
                         </nav>
                     </div>
                     <div class="about__formulaire about__formulaire__area">
-                        <nav class="about__name__label about__name__label--space">
+                        <div class="about__name__label about__name__label--space">
                             <label for="message">Message</label><br>
-                            <textarea name="message" id="message" cols="20" rows="5"></textarea>
-                        </nav class="about__formulaire">
-                        <nav>
-                            <input type="submit" name="envoyer" class="about__circle about__circle--bg-color-yellow nav__a">
-                        </nav>
+                            <textarea name="message" id="message" cols="" rows="" class="input input--textarea "></textarea>
+                        </div class="about__formulaire">
+                    
+                        <input type="submit" name="envoyer" class=" submit about__circle about__circle--bg-color-yellow nav__a circle__contact">
+            
                     </div>
                 </form>
             </section>

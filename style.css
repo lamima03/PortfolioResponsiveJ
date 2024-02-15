@@ -66,7 +66,8 @@
   }
   body{
     font-family: 'Roboto', sans-serif; 
-    padding: 1rem;   
+    padding: 1rem; 
+    margin: 0rem 20rem; 
 }
 header{
     position:sticky;
@@ -103,12 +104,12 @@ header{
 .nav__a{
     text-decoration: none;
     color: var(--black-color);
-    font-size: small;
     font-weight: 100;
     
 }
 .title{
-  font-weight: 500px;
+  font-weight: 600px;
+  font-size: large;
 }
 .title--decoration {
     text-decoration: none;
@@ -122,15 +123,22 @@ header{
 
 .about{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    
+    
+}
+.about--acceuil{
+    height: 40vh;
     margin: 10rem 0rem;
     padding: 0rem 15rem;
+    
     
 }
 .about__image{
     align-items: center;
-    padding-right: 2rem;    
+    padding-right: 2rem; 
+      
 }
 .about__image__img{
     height: 20rem;
@@ -142,25 +150,26 @@ header{
 }
 .about__description{
     padding-left: 2rem;
-    width: 800;
+    width: 800px;
+   
 
 }
 
 .about__button{
     display: flex;
     justify-content:space-between;
-    padding: 1rem 10rem 0rem 0rem;
+    padding: 1rem 23rem 0rem 0rem;
       
 }
 .about__circle{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    height:5rem;
+    width: 6rem;
+    height:6rem;
     border-radius: 50%;
     padding: 1rem;
-    margin: 15px;
+    margin: 1px;
     color:var(--black-color);
     border: 1px solid var(--black-color);
     flex-wrap: wrap;
@@ -179,8 +188,8 @@ header{
 
    
  }
- .paragraphe{
-    line-height: 25px;
+ .p{
+    line-height: 30px;
 }
 /*----------------------------------------and main-------------------------------------------------*/
 .footer{
@@ -195,31 +204,27 @@ header{
 .footer__a{
     text-decoration: none;
 }
+/*------------------------------------------------------------fin de la page d'acceuil-------------------------------------------------------------------------*/
 
-
-
-
-/*----------------------------------------ma page experience ou cv---------------------------------*/
-.main {
-    padding: 0rem 2rem;
-}
-.right {
-    border-bottom:solid #c3bdbdc8 2px;
-    padding: 2rem;
-
-}
-
-/*debut de ma page contact*/
+/*-----------------------------------------------------------debut de ma page contact--------------------------------------------------------------------------*/
 
 .about__formulaire {
     font: 100;
     color:var(--black-color) ;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+   
 
 }
+.about--contact{
+    display: flex;
+    height: 65vh;
+    justify-content: space-between;
+    padding: 0rem 4rem;
 
+
+    }
+    
 .about__name__label {
     display: flex;
     flex-direction: column;
@@ -233,53 +238,88 @@ header{
     
 }
 .about--space{
-    padding: 0rem 5rem;
+    justify-content: space-between;
 }
 
 .about__contact{
     line-height: 30px;
-    padding-right: 40px;
+    margin-top: -10rem ;
+
+
 
 }
 label{
     font-weight: 100;
     font-size: small;
 }
+
 .about__name__label--space{
     margin-right: 2rem;
 }
 .about__name__label{
     margin-bottom: 2rem;
 
+}
+.input{
+    height: 3rem;
+    width: 15rem;
+}
+.input--textarea{
+    height: 8rem;
+}
+.circle__contact{
+    width: 8rem;
+    height:8rem;
+}
 
 
+/*--------------------------------------------------------debut de ma page projet------------------------------------------------------------------------------*/
+.about__description__projet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:15rem;
+    width: 30rem;
+    width: 30rem;
+}
 
+.about__image__projet img{
+    height:15rem;
+    width: 30rem;
+}
+.about__image__projet{
+    border: #121213 solid 1px;
+}
 
-/*--------------------------------------------------------ma page projet-------------------------------------*/
-
-    
+.hiro{
+    height: 55hv;
+    justify-content:center;
+    padding: 4rem 0rem;
 
 }
-.about__image--projet{
-    height: 200px;
-    width: 400px;
+.about--projet{
+    display: flex;
+    justify-content:space-between;
+    padding-bottom: 2rem ;
+    
+    }
+/*----------------------------------------ma page experience ou cv--------------------------------------------------------------------------------------*/
+.main {
+    padding: 2rem 0rem;
+   
+
+}
+.right{
+    border-bottom:solid #c3bdbdc8 2px;
+    padding: 2rem 0rem;
+
+}
+.riht--langue{
+    padding: 1rem;
+
 
     }
-.about--height{
-margin-bottom: 1rem;
-height: 55hv;
-background-color: #121213;
 
-
- 
-
-}
-.about__image--w img{
-    height: 200px;
-    width: 400px;
-    padding-left: 40px;
-    border: solid 1px var(--black-color);
-}
 
 /*---------------------------------------------------debut responsive-------------------------------------*/
 

@@ -67,7 +67,7 @@
   body{
     font-family: 'Roboto', sans-serif; 
     padding: 1rem; 
-    margin: 0rem 20rem; 
+    margin: 0rem 10%; 
 }
 header{
     position:sticky;
@@ -104,7 +104,7 @@ header{
 .nav__a{
     text-decoration: none;
     color: var(--black-color);
-    font-weight: 100;
+
     
 }
 .title{
@@ -129,8 +129,8 @@ header{
     
 }
 .about--acceuil{
-    height: 40vh;
-    margin: 10rem 0rem;
+    height: 65vh;
+    margin: 5rem 0rem;
     padding: 0rem 15rem;
     
     
@@ -203,6 +203,7 @@ header{
 
 .footer__a{
     text-decoration: none;
+    font-weight: 100;
 }
 /*------------------------------------------------------------fin de la page d'acceuil-------------------------------------------------------------------------*/
 
@@ -220,7 +221,7 @@ header{
     display: flex;
     height: 65vh;
     justify-content: space-between;
-    padding: 0rem 4rem;
+    padding: 2rem 4rem;
 
 
     }
@@ -280,7 +281,6 @@ label{
     justify-content: center;
     height:15rem;
     width: 30rem;
-    width: 30rem;
 }
 
 .about__image__projet img{
@@ -324,43 +324,62 @@ label{
 /*---------------------------------------------------debut responsive-------------------------------------*/
 
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width:430px) {
+    body{
+        margin: 0% 5%;
+     }
+    header{
+        position: relative;
+        height: 10%;
+        margin-bottom: 1rem;
+    }
     .nav{
-        flex-wrap: wrap;
         flex-direction: column;
+       
 
     }
-    main{
-        padding: 1rem 1rem;
+    .nav__list{
+        flex-direction: row;
+        margin-top: 1rem;
     }
-    .about{
+    main{
+        margin: 1rem 0rem;
+        padding: 1rem 1rem;
         flex-wrap: wrap;
         flex-direction: column;
+    }
+    .about{
+        flex-direction: column;
         padding: 0%;
-        padding: 0%;
+        padding-top: 1rem;
         align-items: center;
        
     }
     .footer{
         flex-wrap: wrap;
         flex-direction: column;
-        padding: 1%;
+        padding-top: 2%;
         align-items: center;
         text-align: center;
-    }
-    .nav__list{
-        margin-top: 1rem;
-    }
-    .about__image__img{
-        width: 17rem;
-        height: 17rem;
-        padding-top: 1rem;
     
     }
+    .about__image__img{
+        width: 100%;
+        height: 100%;
+       
+    
+    }
+    .about__image{
+        width: 17rem;
+        height: 17rem;
+        padding: 0px;
+        
+    }
     .about__description{
-        width: 380Px;
+        width: 100%;
         text-align:center;
         margin-top: 2rem;
+        padding: 0px;
     }
     .about__button{
         padding: 1rem 0rem 0rem 0rem;
@@ -369,9 +388,43 @@ label{
           
     }
     .about__circle{
-        margin: 5px;
+        margin: 1px;
     }
-
-
+    .main {
+        padding: 1rem 0rem;
+        
     }
-    
+    .about--projet{
+        padding-bottom: 1rem ;
+        justify-content: center;
+        flex-direction: column-reverse;
+        
+        }
+        .about__image__projet img , .about__description__projet{
+            height:30%;
+            width: 100%;
+        }
+        .hiro{
+            padding: 1rem 0rem;
+        
+        }
+        .about__formulaire{
+            flex-direction: column;
+            width: 100%;
+        }
+        .about__name__label--space{
+            margin:0% ;
+            padding: 0% 1%;
+        }
+        .about--contact{
+            height: auto;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+        
+        
+            }
+            .about__contact{
+                line-height: 30px;
+                margin-top: 0rem ;
+            
+        }

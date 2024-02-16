@@ -69,7 +69,7 @@
     padding: 1rem; 
     margin: 0rem 10%; 
 }
-header{
+.header{
     position:sticky;
     top: 0;
     background-color:var(--white-color);
@@ -120,21 +120,17 @@ header{
 /*---------------------------------------------main-----------------------------------------------*/
 
 
-.about{
+.about__acceuil{
     display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
-    
-    
-}
-.about--acceuil{
-    
     margin: 5rem 0rem;
     padding: 0rem 15rem;
     
     
 }
+
 .about__image{
     align-items: center;
     padding-right: 2rem; 
@@ -199,6 +195,7 @@ header{
    border-top: 1px solid #c3bdbdc8;
    padding-top: 2em;
    margin: 0px 2rem;
+   text-align: center;
 }
 
 .footer__a{
@@ -217,7 +214,7 @@ header{
    
 
 }
-.about--contact{
+.about{
     display: flex;
     height: auto;
     justify-content: space-between;
@@ -230,13 +227,14 @@ header{
 .about__name__label {
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    gap: 1rem;
 }
 .about__form{
     display: flex;
     justify-items: center;
     justify-content: space-between;
     line-height: 3.71pt;
+    flex-direction: column ;
     
 }
 .about--space{
@@ -245,14 +243,14 @@ header{
 
 .about__contact{
     line-height: 30px;
-    margin-top: -10rem ;
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
     
 }
 label{
-    font-weight: 100;
-    font-size: small;
+    font-weight: 300;
+    font-size: bold;
 }
 
 .about__name__label--space{
@@ -274,6 +272,9 @@ label{
     width: 8rem;
     height:8rem;
 
+}
+.about__name__label--margin-botton{
+    margin-bottom: 5px;
 }
 
 
@@ -301,7 +302,7 @@ label{
     padding: 4rem 0rem;
 
 }
-.about--projet{
+.about__projet{
     display: flex;
     justify-content:space-between;
     padding-bottom: 2rem ;
@@ -327,12 +328,185 @@ label{
 
 /*---------------------------------------------------debut responsive-------------------------------------*/
 
-
-@media screen and (max-width:430px) {
+@media screen and (max-width:1000px) {
+    main{
+        margin: 1rem 0rem;
+        padding: 1rem 1rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: auto;
+    }
+    
     body{
-        margin: 0% 5%;
+        margin: 0% 7%;
      }
     header{
+        position: relative;
+        height: 10%;
+        margin-bottom: 1rem;
+        position: sticky;
+        top: 0%;
+    }
+    .nav__list{
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+    
+    .about__acceuil{
+        flex-direction: column;
+        padding: 0%;
+        padding-top: 1rem;
+        align-items: center;
+       
+    }
+    .footer{
+        margin-top: 1%;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #c3bdbdc8;
+        padding-top: 2em;
+        margin: 0px 2rem;
+        text-align: center;
+     }
+     
+     .footer__a{
+         text-decoration: none;
+         font-weight: 100;
+     }
+    .about__image__img{
+        width: 100%;
+        height: 100%;
+       
+    
+    }
+    .about__image{
+        width: 17rem;
+        height: 17rem;
+        padding: 0px;
+        
+    }
+    .about__description{
+        width: 100%;
+        text-align:center;
+        margin-top: 2rem;
+        padding: 0px;
+    }
+    .about__button{
+        padding: 1rem 0rem 0rem 0rem;
+        justify-content: center;
+          
+    }
+    .about__circle{
+        margin: 2px;
+    }
+    .main {
+        padding: 1rem 0rem;
+        
+    }
+    
+    .about__projet{
+        padding-bottom: 1rem ;
+        justify-content:space-between ;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
+        
+
+    }
+    .about__image__projet img , .about__description__projet{
+        height:100%;
+        width: 100%;
+        gap: 1%;
+    }
+    .about__description__projet{
+        text-align: left;
+    }
+        
+    .hiro{
+        padding: 1rem 0rem;
+        
+    }
+    /*-----------------------------contact-------------------*/
+    .about__formulaire {
+        font: 100;
+        color:var(--black-color) ;
+        display: flex;
+        align-items: left;
+        flex-direction: row;
+    }
+    main {
+        padding: 0%;
+        margin: 0%;
+    }
+    .about{
+        display: flex;
+        height: auto;
+        justify-content: space-between;
+        padding: 2rem 4rem;
+        margin: 2rem 0rem;
+    
+        }
+        
+    .about__name__label {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+    .about__form{
+        display: flex;
+        justify-items: center;
+        justify-content: space-between;
+        line-height: 3.71pt;
+
+        
+    }
+    .about--space{
+        justify-content: space-between;
+    }
+    
+    .about__contact{
+        line-height: 30px;
+        margin-top: 0px;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+      
+    }
+    label{
+        font-weight: 100;
+        font-size: small;
+    }
+    
+    .about__name__label--space{
+        margin-right: 2rem;
+    }
+    .about__name__label{
+        margin-bottom: 2rem;
+    
+    }
+    .input{
+        height: 3rem;
+        width: 15rem;
+    }
+    .input--textarea{
+        height: 8rem;
+        resize: none;
+    }
+    .circle__contact{
+        width: 8rem;
+        height:8rem;
+    
+    }
+    
+}
+
+
+
+@media screen and (max-width:430px) {
+    .body{
+        margin: 0% 5%;
+     }
+    .header{
         position: relative;
         height: 10%;
         margin-bottom: 1rem;
@@ -346,6 +520,7 @@ label{
         flex-direction: row;
         margin-top: 1rem;
     }
+    
     main{
         margin: 1rem 0rem;
         padding: 1rem 1rem;
@@ -354,6 +529,13 @@ label{
         height: auto;
     }
     .about{
+        flex-direction: column;
+        padding: 0%;
+        padding-top: 1rem;
+        align-items:center;
+       
+    }
+    .about__acceuil{
         flex-direction: column;
         padding: 0%;
         padding-top: 1rem;
@@ -381,13 +563,13 @@ label{
     }
     .about__description{
         width: 100%;
+        height: 30%;
         text-align:center;
         margin-top: 2rem;
         padding: 0px;
     }
     .about__button{
         padding: 1rem 0rem 0rem 0rem;
-        
         justify-content: center;
           
     }
@@ -398,56 +580,69 @@ label{
         padding: 1rem 0rem;
         
     }
-    .about--projet{
-        padding-bottom: 1rem ;
-        justify-content: center;
-        flex-direction: column-reverse;
-        
-    }
-    .about__image__projet img , .about__description__projet{
-        height:30%;
-        width: 100%;
-    }
+    
     .hiro{
         padding: 1rem 0rem;
-        
+      
     }
-    .about__formulaire{
+    .about__name__label{
+        margin-bottom: 1rem;
+        padding: 0%;
         flex-direction: column;
-        width: 100%;
     }
-    .about__name__label--space{
-        margin:0% ;
-        padding: 0% 1%;
-    }
-    .about--contact{
+    .about{
+        display: flex;
         height: auto;
-        justify-content: space-between;
-        padding: 1rem 2rem;
+        padding: 1rem 0rem;
+        align-items: center;
+        justify-content: center;
         
         
+    }
+    .about__formulaire {
+        display: block;
+        flex-direction: column;
+        padding-top: 1%;
+        align-items: center;
+    
+    }
+    .about__form{
+        width: 100%;
     }
     .about__contact{
         line-height: 30px;
-        margin-top: 0rem ;
+        margin: 1rem ;
         align-items: center;
         text-align: center;
     
             
     }
+    .about__name__label--space{
+        margin-right: 0rem;
+    }
     .input{
-        height: 2rem;
-        width: 16rem;
+        height: 3rem;
+        width: 100%;
     }
     .input--textarea{
         height: 6rem;
     }
-    .about--acceuil{
+    .about__acceuil{
     
         margin: 2rem 0rem;
         
     }
-        
+    .about__projet{
+        display: grid;
+        padding-bottom: 1rem ;
+        justify-content: center;
+        grid-column: unset;
+           
+    
+    .submit{
+        margin-left: 29%;
+    }
+    
 
 }
 @media screen and (max-width:380px) {
@@ -459,125 +654,6 @@ label{
 
 
 }
-@media screen and (max-width:1120px) {
-    main{
-        margin: 1rem 0rem;
-        padding: 1rem 1rem;
-        flex-wrap: wrap;
-        flex-direction: column;
-        height: auto;
-    }
-    
-    body{
-        margin: 0% 5%;
-     }
-    header{
-        position: relative;
-        height: 10%;
-        margin-bottom: 1rem;
-    }
-    .nav__list{
-        flex-direction: row;
-        margin-top: 1rem;
-    }
-    main{
-        margin: 1rem 0rem;
-        padding: 1rem 1rem;
-        flex-wrap: wrap;
-        flex-direction: column;
-        height: auto;
-    }
-    .about{
-        flex-direction: column;
-        padding: 0%;
-        padding-top: 1rem;
-        align-items: center;
-       
-    }
-    .footer {
-        flex-direction: column;
-        padding-top: 2%;
-        align-items: center;
-        text-align: center;
-    
-    }
-    .about__image__img{
-        width: 100%;
-        height: 100%;
-       
-    
-    }
-    .about__image{
-        width: 17rem;
-        height: 17rem;
-        padding: 0px;
-        
-    }
-    .about__description{
-        width: 100%;
-        text-align:center;
-        margin-top: 2rem;
-        padding: 0px;
-    }
-    .about__button{
-        padding: 1rem 0rem 0rem 0rem;
-        
-        justify-content: center;
-          
-    }
-    .about__circle{
-        margin: 2px;
-    }
-    .main {
-        padding: 1rem 0rem;
-        
-    }
-    .about--projet{
-        padding-bottom: 1rem ;
-        justify-content: center;
-        flex-direction: column-reverse;
-        
-    }
-    .about__image__projet img , .about__description__projet{
-        height:30%;
-        width: 100%;
-    }
-    .hiro{
-        padding: 1rem 0rem;
-        
-    }
-    .about__formulaire{
-        flex-direction: column;
-        width: 100%;
-    }
-    .about__name__label--space{
-        margin:0% ;
-        padding: 0% 1%;
-    }
-    .about--contact{
-        height: auto;
-        justify-content: space-between;
-        padding: 1rem 2rem;
-        
-        
-    }
-    .about__contact{
-        line-height: 30px;
-        margin-top: 0rem ;
-        align-items: center;
-        text-align: center;
-    
-            
-    }
-    .input{
-        height: 2rem;
-        width: 16rem;
-    }
-    .input--textarea{
-        height: 8rem;
-    }
 
-    
-}
 
 

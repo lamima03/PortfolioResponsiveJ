@@ -172,15 +172,15 @@
 }
 
 .about__circle--bg-color-yellow{
-    background-color: rgb(244, 174, 54);
+    background-color: var(--yellow-color);
 }
 
 .about__circle--bg-color-red{
-    background-color:rgb(213, 41, 41);
+    background-color:var(--red-color);
     
 }
 .about__circle--bg-color-blue{
-    background-color: rgb(131, 223, 244);
+    background-color:var(--blue-color);
 
    
  }
@@ -291,9 +291,8 @@ label{
 .about__image__projet img{
     height:15rem;
     width: 30rem;
-}
-.about__image__projet{
     border: #121213 solid 1px;
+
 }
 
 .hiro{
@@ -404,27 +403,33 @@ label{
         
     }
     
-    .about__projet{
-        padding-bottom: 1rem ;
-        justify-content:space-between ;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        
-        
-
-    }
-    .about__image__projet img , .about__description__projet{
-        height:100%;
-        width: 100%;
-        gap: 1%;
-    }
+    /*-----------------------------projets---------------------*/
     .about__description__projet{
+        display: flex;
+        justify-content: center;
         text-align: left;
+        height:15rem;
+        width: 50%;
     }
+    
+    .about__image__projet img{
+        height:15rem;
+        width: 100%;
+        border: #121213 solid 1px;
+    
+    }
+    
+    .about__projet{
+        display: flex;
+        justify-content:space-between;
+        padding-bottom: 2rem ;
+
         
-    .hiro{
-        padding: 1rem 0rem;
-        
+        }
+    .porto{
+        margin-left: 1rem;
+    }
+
     }
     /*-----------------------------contact-------------------*/
     .about__formulaire {
@@ -492,13 +497,7 @@ label{
         height: 8rem;
         resize: none;
     }
-    .circle__contact{
-        width: 8rem;
-        height:8rem;
     
-    }
-    
-}
 
 
 
@@ -528,13 +527,7 @@ label{
         flex-direction: column;
         height: auto;
     }
-    .about{
-        flex-direction: column;
-        padding: 0%;
-        padding-top: 1rem;
-        align-items:center;
-       
-    }
+    
     .about__acceuil{
         flex-direction: column;
         padding: 0%;
@@ -556,10 +549,17 @@ label{
     
     }
     .about__image{
-        width: 17rem;
+        width: 100%;
         height: 17rem;
         padding: 0px;
         
+    }
+    .about{
+        flex-direction: column;
+        padding: 0%;
+        padding-top: 1rem;
+        align-items:center;
+       
     }
     .about__description{
         width: 100%;
@@ -567,6 +567,7 @@ label{
         text-align:center;
         margin-top: 2rem;
         padding: 0px;
+    
     }
     .about__button{
         padding: 1rem 0rem 0rem 0rem;
@@ -606,6 +607,11 @@ label{
         align-items: center;
     
     }
+    .about__formulaire__area{
+        background-color: #f6230c;
+        align-items: center;
+
+    }
     .about__form{
         width: 100%;
     }
@@ -632,23 +638,50 @@ label{
         margin: 2rem 0rem;
         
     }
-    .about__projet{
-        display: grid;
-        padding-bottom: 1rem ;
+    .about__description__projet{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        grid-column: unset;
-           
-    
+        text-align: left;
+        height:15rem;
+        width: 100%;
+    }
     .submit{
-        margin-left: 29%;
+        
+        margin-left: 30%;
+    }
+    .about__projet{
+        display: flex;
+        justify-content:space-between;
+        padding-bottom: 2rem ;
+        flex-direction: column-reverse;
+        
+        }
+    
     }
     
 
-}
+
 @media screen and (max-width:380px) {
     .about__circle{
         width: 4.5rem;
         height:4.5rem;
+    }
+    .submit{
+        width: 6rem;
+        height: 6rem;
+    }
+    .about__image__img{
+        width: 100%;
+        height: 100%;
+       
+    
+    }
+    .about__image{
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        background-color: #121213;
     }
     
 
